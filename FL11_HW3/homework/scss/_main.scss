@@ -1,0 +1,260 @@
+@mixin undrline {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: map-get($colors, linecol);
+  z-index: -1;
+}
+
+@mixin button {
+  background-color: map-get($colors, btncolor);
+  color: map-get($colors, maincol);
+  border: (1px solid transparent);
+  border-radius: 5px;
+  font-family: $sspfont;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 13px 45px;
+
+  &:hover {
+    background-color: map-get($colors, gradiencol);
+  }
+}
+
+@mixin gradient {
+  background: linear-gradient(50deg, $gradst, $gradlst);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0px;
+  background-color: map-get($colors, maincol);
+  max-width: 1920px;
+}
+
+header {
+  background-image: $banner;
+  background-repeat: no-repeat;
+  border-radius: (0 0 42% 0);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+
+  .header-wrap {
+    @extend .section;
+
+    .landing-logo {
+      display: flex;
+      align-items: center;
+
+      p {
+        color: map-get($colors, txtcol);
+        font-family: $hindfont;
+        font-weight: 900px;
+        font-size: 30px;
+        padding-left: 10px;
+
+        span {
+          font-size: 13px;
+          display: block;
+          text-align: center;
+          margin: -10px;
+          padding: 0;
+        }
+      }
+    }
+
+    .header_button {
+      @include button;
+    }
+
+    .header_text {
+      color: map-get($colors, txtcol);
+      font-family: $hindfont;
+      white-space: pre;
+      font-size: 17px;
+      margin-left: -45px;
+      padding: 0;
+      position: relative;
+
+    }
+
+    .header_heading {
+      color: map-get($colors, txtcol);
+      font-family: $sspfont;
+      font-size: 78px;
+      width: 800px;
+      font-weight: 700;
+      margin: 0;
+      padding-top: 20px;
+      position: relative;
+      z-index: 2;
+
+      &::after {
+        @include undrline;
+        height: 27px;
+        width: 330px;
+        top: 175px;
+        left: 0px;
+
+      }
+    }
+  }
+}
+
+.section {
+  margin: 0 auto;
+  width: 1500px;
+
+  .section_text {
+    font-family: $sspfont;
+    font-weight: 600;
+    font-size: 50px;
+    color: map-get($colors, txtcol);
+    text-align: center;
+
+    &::after {
+      @include undrline;
+      width: 222px;
+      height: 19px;
+      right: 1078px;
+      top: 885px;
+    }
+  }
+
+  .section_card_wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .section_card {
+      background-color: map-get($colors, boxcol);
+      border: 1px solid transparent;
+      border-radius: 7px;
+      margin: 0 10px;
+      padding: 18px 18px 3px 18px;
+      text-align: center;
+      width: 30%;
+
+      .section_card_img {
+        border-radius: 5px;
+        width: 100%;
+
+      }
+
+      .section_card_text {
+        color: map-get($colors, lgcol);
+        font-family: $hindfont;
+        font-size: 20px;
+
+      }
+
+      .section_card_heading {
+        color: map-get($colors, maincol);
+        font-family: $hindfont;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px 0 0 0;
+        margin: 0px;
+      }
+    }
+
+  }
+}
+
+.section_banner {
+  @include gradient;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 65%;
+  margin: auto;
+  margin-top: 70px;
+  padding: 20px 100px 20px 100px;
+  border-radius: 7px;
+  z-index: 2;
+  bottom: -90px;
+
+  .section_banner_heading {
+    font-family: $sspfont;
+    font-weight: 700;
+    font-size: 32px;
+    color: map-get($colors, txtcol);
+    padding: 10px;
+    margin: 5px;
+
+    &::after {
+      @include undrline;
+      width: 68px;
+      height: 15px;
+      left: 242px;
+      bottom: 96px;
+    }
+  }
+
+  .section_banner_text {
+    font-family: $hindfont;
+    color: map-get($colors, lgcol);
+    font-size: 17px;
+    padding: 4px 0 10px 16px;
+    margin-top: 0;
+  }
+
+  .section_banner_button {
+    @include button;
+    padding: 0;
+    height: 60px;
+    padding: 0 60px 0 60px;
+    margin-top: 30px;
+    font-size: 22px;
+  }
+}
+
+
+footer {
+  background-color: map-get($colors, boxcol);
+  height: 260px;
+
+  .footer-wrap {
+    @extend .section;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 110px;
+
+    .footer_logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      p {
+        color: map-get($colors, lgcol);
+        font-family: $hindfont;
+        font-weight: 700px;
+        font-size: 30px;
+        padding-left: 20px;
+
+        span {
+          font-size: 13px;
+          display: block;
+          text-align: center;
+          margin: 0;
+          padding-top: -20px;
+        }
+      }
+    }
+
+    .footer_text {
+      width: 22%;
+      color: map-get($colors, lgcol);
+      font-family: $hindfont;
+      font-size: 15px;
+    }
+
+    .footer-cr {
+      font-family: $hindfont;
+      color: map-get($colors, lgcol);
+      font-size: 18px;
+    }
+  }
+
+}

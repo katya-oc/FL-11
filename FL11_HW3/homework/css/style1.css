@@ -1,0 +1,198 @@
+body {
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #ffffff;
+  max-width: 1920px; }
+
+header {
+  background-image: url(file:///Users/katya_oc/Desktop/FL11_HW3/homework/img/m-h-day.jpg);
+  background-repeat: no-repeat;
+  border-radius: 0 0 42% 0;
+  background-size: cover;
+  background-position: center;
+  height: 800px; }
+  header .header-wrap .landing-logo {
+    display: flex;
+    align-items: center; }
+    header .header-wrap .landing-logo p {
+      color: #2c2f3c;
+      font-family: "Hind", sans-serif;
+      font-weight: 900px;
+      font-size: 30px;
+      padding-left: 10px; }
+      header .header-wrap .landing-logo p span {
+        font-size: 13px;
+        display: block;
+        text-align: center;
+        margin: -10px;
+        padding: 0; }
+  header .header-wrap .header_button {
+    background-color: #699900;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 13px 45px; }
+    header .header-wrap .header_button:hover {
+      background-color: #2e5cd6; }
+  header .header-wrap .header_text {
+    color: #2c2f3c;
+    font-family: "Hind", sans-serif;
+    white-space: pre;
+    font-size: 17px;
+    margin-left: -45px;
+    padding: 0;
+    position: relative; }
+  header .header-wrap .header_heading {
+    color: #2c2f3c;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 78px;
+    width: 800px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2; }
+    header .header-wrap .header_heading::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #14a0c7;
+      z-index: -1;
+      height: 27px;
+      width: 330px;
+      top: 175px;
+      left: 0px; }
+
+.section, header .header-wrap, footer .footer-wrap {
+  margin: 0 auto;
+  width: 1500px; }
+  .section .section_text, header .header-wrap .section_text, footer .footer-wrap .section_text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #2c2f3c;
+    text-align: center; }
+    .section .section_text::after, header .header-wrap .section_text::after, footer .footer-wrap .section_text::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #14a0c7;
+      z-index: -1;
+      width: 222px;
+      height: 19px;
+      right: 1078px;
+      top: 885px; }
+  .section .section_card_wrap, header .header-wrap .section_card_wrap, footer .footer-wrap .section_card_wrap {
+    display: flex;
+    justify-content: space-between; }
+    .section .section_card_wrap .section_card, header .header-wrap .section_card_wrap .section_card, footer .footer-wrap .section_card_wrap .section_card {
+      background-color: #21232e;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      margin: 0 10px;
+      padding: 18px 18px 3px 18px;
+      text-align: center;
+      width: 30%; }
+      .section .section_card_wrap .section_card .section_card_img, header .header-wrap .section_card_wrap .section_card .section_card_img, footer .footer-wrap .section_card_wrap .section_card .section_card_img {
+        border-radius: 5px;
+        width: 100%; }
+      .section .section_card_wrap .section_card .section_card_text, header .header-wrap .section_card_wrap .section_card .section_card_text, footer .footer-wrap .section_card_wrap .section_card .section_card_text {
+        color: #c0c3ce;
+        font-family: "Hind", sans-serif;
+        font-size: 20px; }
+      .section .section_card_wrap .section_card .section_card_heading, header .header-wrap .section_card_wrap .section_card .section_card_heading, footer .footer-wrap .section_card_wrap .section_card .section_card_heading {
+        color: #ffffff;
+        font-family: "Hind", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px 0 0 0;
+        margin: 0px; }
+
+.section_banner {
+  background: linear-gradient(50deg, #699900, #2e5cd6);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 65%;
+  margin: auto;
+  margin-top: 70px;
+  padding: 20px 100px 20px 100px;
+  border-radius: 7px;
+  z-index: 2;
+  bottom: -90px; }
+  .section_banner .section_banner_heading {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #2c2f3c;
+    padding: 10px;
+    margin: 5px; }
+    .section_banner .section_banner_heading::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #14a0c7;
+      z-index: -1;
+      width: 68px;
+      height: 15px;
+      left: 242px;
+      bottom: 96px; }
+  .section_banner .section_banner_text {
+    font-family: "Hind", sans-serif;
+    color: #c0c3ce;
+    font-size: 17px;
+    padding: 4px 0 10px 16px;
+    margin-top: 0; }
+  .section_banner .section_banner_button {
+    background-color: #699900;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 13px 45px;
+    padding: 0;
+    height: 60px;
+    padding: 0 60px 0 60px;
+    margin-top: 30px;
+    font-size: 22px; }
+    .section_banner .section_banner_button:hover {
+      background-color: #2e5cd6; }
+
+footer {
+  background-color: #21232e;
+  height: 260px; }
+  footer .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 110px; }
+    footer .footer-wrap .footer_logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      footer .footer-wrap .footer_logo p {
+        color: #c0c3ce;
+        font-family: "Hind", sans-serif;
+        font-weight: 700px;
+        font-size: 30px;
+        padding-left: 20px; }
+        footer .footer-wrap .footer_logo p span {
+          font-size: 13px;
+          display: block;
+          text-align: center;
+          margin: 0;
+          padding-top: -20px; }
+    footer .footer-wrap .footer_text {
+      width: 22%;
+      color: #c0c3ce;
+      font-family: "Hind", sans-serif;
+      font-size: 15px; }
+    footer .footer-wrap .footer-cr {
+      font-family: "Hind", sans-serif;
+      color: #c0c3ce;
+      font-size: 18px; }
